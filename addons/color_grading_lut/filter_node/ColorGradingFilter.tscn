@@ -1,18 +1,17 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=4 format=3 uid="uid://lwg4ebdnsbyc"]
 
-[ext_resource path="res://addons/color_grading_lut/filter_node/color_grading_lut.shader" type="Shader" id=1]
-[ext_resource path="res://addons/color_grading_lut/default_luts/identity.png" type="Texture" id=2]
+[ext_resource type="Shader" uid="uid://2ib7os2vrina" path="res://addons/color_grading_lut/filter_node/color_grading_lut.gdshader" id="1"]
+[ext_resource type="Texture2D" uid="uid://b1e3vviy3ynj3" path="res://addons/color_grading_lut/default_luts/identity.png" id="2"]
 
-
-
-
-[sub_resource type="ShaderMaterial" id=1]
-shader = ExtResource( 1 )
-shader_param/lut_size = 16.0
-shader_param/lut = ExtResource( 2 )
+[sub_resource type="ShaderMaterial" id="1"]
+shader = ExtResource("1")
+shader_parameter/lut = ExtResource("2")
+shader_parameter/lut_size = 16.0
+shader_parameter/filter_alpha = 1.0
 
 [node name="ColorGradingFilter" type="ColorRect"]
-material = SubResource( 1 )
+material = SubResource("1")
+custom_minimum_size = Vector2(1024, 600)
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-rect_min_size = Vector2( 1024, 600 )

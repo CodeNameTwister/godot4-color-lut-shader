@@ -1,6 +1,6 @@
 # Godot Color LUT Shader
 
-Real-Time Color Grading using LUT shader for Godot 3.
+Real-Time Color Grading using LUT shader for Godot 4.
 
 ![](lut_title.png "LUT Title")
 

@@ -1,0 +1,8 @@
+res://addons/color_grading_lut/filter_node/ColorGradingFilter.tscn
+res://addons/color_grading_lut/filter_node/color_grading_lut.gdshader
+res://example/Main.tscn
+res://addons/color_grading_lut/filter_node/color_grading_filter.gd
+res://addons/color_grading_lut/screenshot_tool/color_grading_tool.gd
+res://addons/color_grading_lut/color_grading_lut_plugin.gd
+res://addons/color_grading_lut/filter_node/color_gradient_filter_linear_colorspace.gdshader
+res://addons/color_grading_lut/filter_node/color_grading_filter_simple.gdshader

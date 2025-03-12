@@ -6,22 +6,18 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=4
-
-_global_script_classes=[  ]
-_global_script_class_icons={
-
-}
+config_version=5
 
 [application]
 
 config/name="Color Grading LUT"
 run/main_scene="res://example/Main.tscn"
+config/features=PackedStringArray("4.4")
 config/icon="res://icon.png"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "color_grading_lut" )
+enabled=PackedStringArray("color_grading_lut")
 
 [rendering]
 
